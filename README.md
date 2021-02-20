@@ -17,4 +17,8 @@ gawk '/^(menuentry|submenu)/ { printf '\
 ' , "\\1" , "g" ) ; '\
 ' if ( uuid != $0 ) { printf " [" uuid "]" } printf "\n" }' \
   /boot/grub/grub.cfg
+# => affiche
+# Debian GNU/Linux [e5ffc277-40cc-4fc8-b5b2-b3b83c78850b]
+# Options avancées pour Debian GNU/Linux [e5ffc277-40cc-4fc8-b5b2-b3b83c78850b]
+
 ```
