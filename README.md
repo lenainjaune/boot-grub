@@ -13,8 +13,7 @@ awk '/^(menuentry|submenu)/' /boot/grub/grub.cfg
 gawk '/^(menuentry|submenu)/ { printf '\
 ' gensub( /[^\x27]+\x27([^\x27]+)\x27.+/ , "\\1" , "g" ) ; '\
 ' uuid = gensub( '\
-'  /.+'\
-'([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}).*/ '\
+'/.+([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}).*/ '\
 ' , "\\1" , "g" ) ; '\
 ' if ( uuid != $0 ) { printf " [" uuid "]" } printf "\n" }' \
   /boot/grub/grub.cfg
