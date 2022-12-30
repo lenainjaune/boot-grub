@@ -1,3 +1,35 @@
+RO en attente de la fin de migration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # boot-grub
 howto
 
